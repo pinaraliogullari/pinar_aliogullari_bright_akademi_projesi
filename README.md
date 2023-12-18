@@ -7,11 +7,7 @@
 ## Logo
 ![Logo]()
 
-    
-## Road map
-
-
-
+   
   
 ## Features
 
