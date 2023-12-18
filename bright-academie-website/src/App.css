@@ -1,5 +1,6 @@
 body{
     font-family:sans-serif;
+    user-select:none;
 }
 /* navbar */
 .navbar{
@@ -34,14 +35,10 @@ background-color:white;
   padding:40px 0;
   background-color:#0b123f;
   color:#fff;
-  position:absolute;
-  bottom:0;
-  right:0;
-  width:100%;
+   width:100%;
 
 
 }
-
 
 .footer-icons i:hover {
   background: #f60838;

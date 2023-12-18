@@ -16,10 +16,11 @@ import { AppContext } from './Context/AppContext.js';
 
 function App() {
 
+
   return (
     <>
 
-      <AppContext.Provider>
+      <AppContext.Provider >
         <BrowserRouter>
           <Header />
           <Routes>
@@ -30,7 +31,7 @@ function App() {
             <Route path='/contact' element={<Contact />} />
          
           </Routes>
-          <Footer />
+           <Footer /> 
         </BrowserRouter>
       </AppContext.Provider>
 

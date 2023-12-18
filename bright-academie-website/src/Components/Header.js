@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Navbar, Nav, NavbarBrand,NavbarToggle } from 'react-bootstrap'
-import logo from '../images/brightLogo7.png';
+import logo from '../Images/brightLogo7.png';
 import { NavLink } from 'react-router-dom'
 
 
