@@ -1,11 +1,11 @@
 
-# 🚀Bright Academy Web Interface Project
+# Bright Academy Web Interface Project
 
 
 
 
 ## Logo
-![Logo]()
+
 
     
   
