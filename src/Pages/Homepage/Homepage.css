@@ -1,0 +1,54 @@
+.btn-apply{
+        background: -webkit-linear-gradient(-65deg, #c165dd 0%, #1153fc 100%);
+        border-radius:30px;
+        font-size:22px;
+        border:none;
+        opacity:.8;
+        transition: opacity 0.3s ease;
+}
+
+.btn-apply:hover{
+        opacity:1;
+}
+.blog-hover a:hover{
+color:black !important;
+}
+
+.blog-hover p:hover{
+    color:red;
+    cursor:pointer
+}
+h3{
+        color:#0F2167;
+}
+
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer; 
+}
+
+.icon-container:hover span {
+  transform: rotate(360deg);
+  transition: transform 1s ease; 
+}
+
+.text-container {
+  display: inline-block;
+  margin-left: 10px; 
+}
+/* .scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scrolling 5s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(4%);
+  }
+  100% {
+    transform: translateX(-0%);
+  }
+} */
