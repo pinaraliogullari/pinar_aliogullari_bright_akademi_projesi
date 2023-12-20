@@ -46,7 +46,7 @@ const Homepage = () => {
                 backgroundColor: 'rgba(255, 255, 255, 0.5)',
 
               }}>
-              <h1 className='display-4 text-primary-emphasis  text-center '>Bright Akademie</h1>
+              <h1  className='display-4 text-primary-emphasis  text-center '>Bright Akademie</h1>
               <p className='display-5 text-primary-emphasis text-center'>Education and Employment Program</p>
               <Button className=" btn-apply" >Apply now!</Button>
             </div>
@@ -118,7 +118,7 @@ const Homepage = () => {
                 </Row>
                 <Row>
                   <Col >
-                    <div className="icon-container">
+                    <div className="icon-container mb-4">
                       <span><FcDepartment style={{ fontSize: '60' }} /></span>
                       <div className="text-container">
                         <span className='mx-3 fw-bold'>guidance to find a job </span>

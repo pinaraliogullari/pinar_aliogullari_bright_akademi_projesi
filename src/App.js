@@ -17,6 +17,7 @@ import blog3 from './Images/blog3.jpg';
 
 
 
+
 function App() {
   const [blogs, setBlogs] = useState([
     { title: "How Do Web Workers in ReactJS Transform App Performance?", desc: "Have you ever had a situation where some code you’re running makes your app or website freeze for a bit, causing it to become unresponsive?If that’s the case, you definitely want a way to make that code run in the background so it doesn’t disrupt the user experience..", date: "5 Sep 2023", link: "https://medium.com/@Evelyn.Taylor/how-do-web-workers-in-reactjs-transform-app-performance-31ee8e6d2d1e", image: blog1 },
@@ -29,7 +30,9 @@ function App() {
 
       <AppContext.Provider value={{ blogs, setBlogs }} >
         <BrowserRouter>
+  
           <Header />
+         
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about-us" element={<AboutUs />} />
@@ -38,7 +41,8 @@ function App() {
             <Route path='/contact' element={<Contact />} />
          
           </Routes>
-           <Footer /> 
+       <Footer/>
+    
         </BrowserRouter>
       </AppContext.Provider>
 

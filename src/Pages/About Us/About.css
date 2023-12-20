@@ -1,0 +1,24 @@
+
+
+.values-icon{
+    font-size:50px;
+    color:#3887BE;
+    background-color:white;
+    border:none;
+    width:200px;
+    height:90px;
+    text-align:center;
+
+}
+
+
+.title{
+    color:#0b123f;
+}
+
+@media screen and (max-width: 576px) {
+    body {
+       font-size:13px;
+    }
+    
+}

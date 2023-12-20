@@ -38,3 +38,10 @@ h3{
   display: inline-block;
   margin-left: 10px; 
 }
+
+
+@media screen and (max-width: 576px) {
+    body {
+       font-size:13px;
+    }
+}
