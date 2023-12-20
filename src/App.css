@@ -5,6 +5,7 @@ body{
 /* navbar */
 .navbar{
    background: #0b123f;
+   height:100px;
 }
 
 .nav-link{
@@ -36,6 +37,7 @@ background-color:white;
   background-color:#0b123f;
   color:#fff;
    width:100%;
+
 
 
 }

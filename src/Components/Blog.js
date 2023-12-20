@@ -22,10 +22,6 @@ const Blog = ({ blog }) => {
 
             </Col>
 
-
-
-
-
         </Row>
 
 

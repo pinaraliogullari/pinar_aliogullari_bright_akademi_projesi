@@ -38,17 +38,3 @@ h3{
   display: inline-block;
   margin-left: 10px; 
 }
-/* .scrolling-text {
-  white-space: nowrap;
-  overflow: hidden;
-  animation: scrolling 5s linear infinite;
-}
-
-@keyframes scrolling {
-  0% {
-    transform: translateX(4%);
-  }
-  100% {
-    transform: translateX(-0%);
-  }
-} */

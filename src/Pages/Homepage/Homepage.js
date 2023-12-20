@@ -12,13 +12,14 @@ import { AppContext } from '../../Context/AppContext';
 
 
 
+
 const Homepage = () => {
   const { blogs } = useContext(AppContext);
 
 
   return (
     <>
-      <Container>
+      <Container fluid   >
         <a href='/' className='sticky-bottom fs-2 text-secondary ' style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000 }}>
           <FaArrowCircleUp />
         </a>
@@ -51,10 +52,13 @@ const Homepage = () => {
             </div>
           </Col>
         </Row>
-
-        <Row className="mt-5">
-          <Col md={6}>
-            <h3 ><span><strong>Blog</strong></span>Posts </h3>
+      </Container>
+      <Container   >
+       
+   
+        <Row className="mt-5" >
+          <Col md={6} >
+            <h3 className='mx-5' ><span><strong>Blog</strong></span>Posts </h3>
             {blogs.map((blog, index) => (
               <Col key={index} className="mb-4 border p-5">
                 <Blog blog={blog} />
@@ -135,64 +139,5 @@ const Homepage = () => {
   )
 }
 export default Homepage;
-{/* <section className="bg-light text-dark overflow-hidden mt-5 py-5">
-                <div className="container px-5 py-24">
-                  <div className="row g-2">
-                    <div className="col-md-4 mb-4">
-                      <div className="flex-shrink-0">
-                        <a href="https://medium.com/@Evelyn.Taylor/how-do-web-workers-in-reactjs-transform-app-performance-31ee8e6d2d1e" target='_blank'><img src={blog1} alt="blog1" /></a>
-                        <span className="mt-1 text-sm text-gray-400 d-block">5 Sep 2023</span>
-                      </div>
-                    </div>
-                    <div className="col-md-8 blog-hover">
-                      <h2 className="fs-5 font-weight-medium text-dark mb-2">How Do Web Workers in ReactJS Transform App Performance?</h2>
-                      <p  >Have you ever had a situation where some code you’re running makes your app or website freeze for a bit, causing it to become unresponsive?If that’s the case, you definitely want a way to make that code run in the background so it doesn’t disrupt the user experience..</p>
-                      <a href="https://medium.com/@Evelyn.Taylor/how-do-web-workers-in-reactjs-transform-app-performance-31ee8e6d2d1e" target="_blank" className='text-decoration-none text-danger  '  >Learn More</a>
 
-
-                    </div>
-                  </div>
-
-                </div>
-              </section>
-              <section className="bg-light text-dark overflow-hidden mt-5 py-5">
-                <div className="container px-5 py-24">
-                  <div className="row g-2">
-                    <div className="col-md-4 mb-4">
-                      <div className="flex-shrink-0">
-                        <a href="https://medium.com/stackademic/react-js-state-management-in-2023-is-redux-still-a-go-to-choice-50a2e83ae196" target='_blank'><img src={blog2} alt="blog1" /></a>
-                        <span className="mt-1 text-sm text-gray-400 d-block">11 Sep 2023</span>
-                      </div>
-                    </div>
-                    <div className="col-md-8 blog-hover">
-                      <h2 className="fs-5 font-weight-medium text-dark mb-2">React JS State Management in 2023: Is Redux Still a Go-To Choice?</h2>
-                      <p  >Front-end development has witnessed significant changes and advancements over the years. New libraries, frameworks, and tools have emerged to simplify development, enhance performance, and streamline state management.</p>
-                      <a href="https://medium.com/stackademic/react-js-state-management-in-2023-is-redux-still-a-go-to-choice-50a2e83ae196" target="_blank" className='text-decoration-none text-danger  '  >Learn More</a>
-
-
-                    </div>
-                  </div>
-
-                </div>
-              </section>
-              <section className="bg-light text-dark overflow-hidden mt-5 py-5">
-                <div className="container px-5 py-24">
-                  <div className="row g-2">
-                    <div className="col-md-4 mb-4">
-                      <div className="flex-shrink-0">
-                        <a href="https://medium.com/stackademic/react-js-mastering-react-js-solid-principles-dfb48d03e565" target='_blank'><img src={blog3} alt="blog1" /></a>
-                        <span className="mt-1 text-sm text-gray-400 d-block">26 June 2023</span>
-                      </div>
-                    </div>
-                    <div className="col-md-8 blog-hover">
-                      <h2 className="fs-5 font-weight-medium text-dark mb-2">Mastering React JS SOLID Principles</h2>
-                      <p  >SOLID principles are five design principles that help us keep our application reusable, maintainable, scalable, and loosely coupled.</p>
-                      <a href="https://medium.com/stackademic/react-js-mastering-react-js-solid-principles-dfb48d03e565" target="_blank" className='text-decoration-none text-danger  '  >Learn More</a>
-
-
-                    </div>
-                  </div>
-
-                </div>
-              </section> */}
 
