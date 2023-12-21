@@ -13,17 +13,16 @@ import background from '../../Images/background6.jpg';
 
 
 
-
-
-
 const Homepage = () => {
   const { blogs } = useContext(AppContext);
-
+  const top = () => {
+    window.scrollTo(0, 0)
+  }
 
   return (
     <>
       <Container fluid   >
-        <a href='/' className='sticky-bottom fs-2 text-secondary ' style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000 }}>
+        <a onClick={top} href='/' className='sticky-bottom fs-2 text-secondary ' style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000 }}>
           <FaArrowCircleUp />
         </a>
 

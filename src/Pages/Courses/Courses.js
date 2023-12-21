@@ -3,7 +3,7 @@ import { Container, Button, Row, Col, Card } from 'react-bootstrap';
 import background from '../../Images/background6.jpg';
 import './Courses.css';
 
-
+//sağdan soldan eşit boşluk sorunu
 const Courses = () => {
   return (
     <Container fluid className=' background ' style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover" }}>

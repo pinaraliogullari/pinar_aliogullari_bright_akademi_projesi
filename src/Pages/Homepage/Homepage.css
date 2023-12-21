@@ -10,11 +10,9 @@
 .btn-apply:hover{
         opacity:1;
 }
-.blog-hover a:hover{
-color:black !important;
-}
 
-.blog-hover p:hover{
+
+.blog-hover :hover{
     color:red;
     cursor:pointer
 }

@@ -22,7 +22,7 @@ import { TbBulb } from "react-icons/tb";
 const AboutUs = () => {
   return (
 
-    <Container fluid className=' d-flex justify-content-center align-items-center flex-column g-0 ' >
+    <Container fluid className=' d-flex justify-content-center align-items-center flex-column g-0 overflow-hidden' >
 
       <div className='background' style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'repeat', backgroundSize: "cover" }}>
 

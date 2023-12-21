@@ -4,6 +4,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  scroll-behavior:smooth;
 }
 body{
  font-family: 'Montserrat', sans-serif;
@@ -11,7 +12,7 @@ user-select:none;
 }
 /* navbar */
 .navbar{
-   background: #0b123f;
+   background: #001221;
    height:100px;
 }
 
@@ -46,7 +47,7 @@ background-color:white;
 .Footer {
 
   padding:40px 0;
-  background-color:#0b123f;
+  background-color:#001221;
   color:#fff;
    width:100%;
 

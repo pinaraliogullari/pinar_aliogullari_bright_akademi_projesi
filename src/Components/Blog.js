@@ -17,7 +17,8 @@ const Blog = ({ blog }) => {
             </Col>
             <Col md={8} className='blog-hover'>
                 <h2 className=" mb-2 title">{blog.title}</h2>
-                <p className="card-text text">{blog.desc} <a href={blog.link} target="_blank" className='text-decoration-none text blog-hover'>Learn More</a></p>
+                <p className="card-text text">{blog.desc}</p> 
+                <a href={blog.link} target="_blank" className='text-decoration-none text blog-hover'>Learn More</a>
 
 
             </Col>
