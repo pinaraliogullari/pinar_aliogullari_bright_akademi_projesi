@@ -13,7 +13,12 @@
 
 
 .title{
-    color:#0b123f;
+    color:WhiteSmoke;
+}
+
+.text{
+    color:WhiteSmoke;
+    font-size:15px;
 }
 
 @media screen and (max-width: 576px) {

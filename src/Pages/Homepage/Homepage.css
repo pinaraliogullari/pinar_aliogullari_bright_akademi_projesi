@@ -18,10 +18,14 @@ color:black !important;
     color:red;
     cursor:pointer
 }
-h3{
-        color:#0F2167;
+.title{
+    color:WhiteSmoke;
 }
 
+.text{
+    color:WhiteSmoke;
+    font-size:15px;
+}
 
 .icon-container {
   display: flex;

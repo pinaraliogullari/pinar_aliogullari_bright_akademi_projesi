@@ -9,6 +9,9 @@ import { FcComboChart } from "react-icons/fc";
 import { FcDepartment } from "react-icons/fc";
 import Blog from '../../Components/Blog';
 import { AppContext } from '../../Context/AppContext';
+import background from '../../Images/background6.jpg';
+
+
 
 
 
@@ -46,19 +49,19 @@ const Homepage = () => {
                 backgroundColor: 'rgba(255, 255, 255, 0.5)',
 
               }}>
-              <h1  className='display-4 text-primary-emphasis  text-center '>Bright Akademie</h1>
+              <h1 className='display-4 text-primary-emphasis  text-center '>Bright Akademie</h1>
               <p className='display-5 text-primary-emphasis text-center'>Education and Employment Program</p>
               <Button className=" btn-apply" >Apply now!</Button>
             </div>
           </Col>
         </Row>
       </Container>
-      <Container   >
-       
-   
-        <Row className="mt-5" >
-          <Col md={6} >
-            <h3 className='mx-5' ><span><strong>Blog</strong></span>Posts </h3>
+
+
+      <div className='background ' style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'repeat', backgroundSize: "cover" }}>
+        <Row className='mx-5' >
+          <Col md={12} lg={6}>
+            <h3 className='mx-5  mt-4 title' ><span><strong>Blog</strong></span>Posts </h3>
             {blogs.map((blog, index) => (
               <Col key={index} className="mb-4 border p-5">
                 <Blog blog={blog} />
@@ -66,16 +69,17 @@ const Homepage = () => {
             ))}
           </Col>
 
-          <Col md={6}>
+
+          <Col md={12} lg={6}>
             <Row>
               <Col xs={12}>
-                <div className="ratio ratio-4x3 mt-4">
-                  <iframe src="https://www.youtube.com/embed/N3AkSS5hXMA?si=i_n90hq-eLuNcTBd" title="YouTube video" allowfullscreen></iframe>
+                <div className="ratio ratio-4x3 mt-5  ">
+                  <iframe src="https://www.youtube.com/embed/QFaFIcGhPoM?si=BV3evO2mikngSNp0" title="YouTube video" allowfullscreen width="100" height="100"></iframe>
                 </div>
                 <div className='mt-5 '>
-                  <h3>How should I join the <strong>Bright Program?</strong> </h3>
+                  <h3 className='title'>How should I join the <strong>Bright Program?</strong> </h3>
                   <hr />
-                  <p className='bright-info'>BAU Bright Education and Employment Project is supported by 5000+ business partners of Bahçeşehir University and Wissen Technology, especially in the informatics, consultancy, telecommunication and software sectors.</p>
+                  <p className='text'>BAU Bright Education and Employment Project is supported by 5000+ business partners of Bahçeşehir University and Wissen Technology, especially in the informatics, consultancy, telecommunication and software sectors.</p>
                   <hr />
 
                 </div>
@@ -84,10 +88,10 @@ const Homepage = () => {
                 <Row>
                   <Col >
 
-                    <div className="icon-container">
+                    <div className="icon-container" style={{ marginTop: '60px' }}>
                       <span><FcAutomatic style={{ fontSize: '60' }} /></span>
                       <div className="text-container">
-                        <span className='mx-3 fw-bold'>6 months of practical training with expert trainers</span>
+                        <span className='mx-3  text'>6 months of practical training with expert trainers</span>
                       </div>
                     </div>
                   </Col>
@@ -97,7 +101,7 @@ const Homepage = () => {
                     <div className="icon-container">
                       <span><FcProcess style={{ fontSize: '60' }} /></span>
                       <div className="text-container">
-                        <span className='mx-3 fw-bold'>end-to-end project development experience</span>
+                        <span className='mx-3  text'>end-to-end project development experience</span>
                       </div>
                     </div>
                   </Col>
@@ -109,7 +113,7 @@ const Homepage = () => {
                     <div className="icon-container">
                       <span><FcComboChart style={{ fontSize: '60' }} /></span>
                       <div className="text-container">
-                        <span className='mx-3 fw-bold'>career counseling</span>
+                        <span className='mx-3  text'>career counseling</span>
                       </div>
                     </div>
 
@@ -121,7 +125,7 @@ const Homepage = () => {
                     <div className="icon-container mb-4">
                       <span><FcDepartment style={{ fontSize: '60' }} /></span>
                       <div className="text-container">
-                        <span className='mx-3 fw-bold'>guidance to find a job </span>
+                        <span className='mx-3 text'>guidance to find a job </span>
                       </div>
                     </div>
                   </Col>
@@ -133,8 +137,10 @@ const Homepage = () => {
             </Row>
           </Col>
         </Row>
+      </div>
 
-      </Container>
+
+
     </>
   )
 }
