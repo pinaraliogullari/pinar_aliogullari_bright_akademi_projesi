@@ -76,7 +76,7 @@ const Homepage = () => {
                   <iframe src="https://www.youtube.com/embed/QFaFIcGhPoM?si=BV3evO2mikngSNp0" title="YouTube video" allowfullscreen width="100" height="100"></iframe>
                 </div>
                 <div className='mt-5 '>
-                  <h3 className='title'>How should I join the <strong>Bright Program?</strong> </h3>
+                  <h3 className='title'>Why should I join the <strong>Bright Program?</strong> </h3>
                   <hr />
                   <p className='text'>BAU Bright Education and Employment Project is supported by 5000+ business partners of Bahçeşehir University and Wissen Technology, especially in the informatics, consultancy, telecommunication and software sectors.</p>
                   <hr />

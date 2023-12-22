@@ -52,6 +52,7 @@ background-color:white;
    width:100%;
 
 
+
 }
 
 
@@ -93,5 +94,48 @@ background-color:white;
     height: 100%;
      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .84);
 
+
+}
+
+/*course*/
+
+.limited-text{
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+}
+
+.course-card {
+  width: 20rem;
+  opacity: 1;
+  transition: transform 0.3s ease-in-out;
+  cursor:pointer;
+    border:none;
+}
+
+.course-card:hover {
+  transform: scale(1.05); 
+
+}
+
+.img-container {
+  overflow: hidden;
+
+}
+
+.course-img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover .course-img {
+  transform: scale(1.2); /* Resmi büyütmek için */
+}
+
+.course-body {
+  min-height: 270px;
 
 }
