@@ -6,6 +6,9 @@ import AboutUs from './Pages/About Us/AboutUs.js';
 import Courses from './Pages/Courses/Courses.js';
 import Instructors from './Pages/Instructors/Instructors.js';
 import Contact from './Pages/Contact/Contact.js';
+import CourseDetails from './Pages/CourseDetails/CourseDetails.js';
+
+
 import Footer from './Components/Footer.js';
 import { AppContext } from './Context/AppContext.js';
 import { useState } from 'react';
@@ -54,6 +57,8 @@ function App() {
   const [courses, setCourses] = useState(allCourses);
   const [keyword, setKeyword] = useState("");
   const [noResults, setNoResults] = useState(false);
+  const [selectedCourse, setSelectedCourse] = useState(null);
+ 
 
   const searchCourse = (keyword) => {
     const filteredCourses = allCourses.filter((course) =>
@@ -73,10 +78,12 @@ function App() {
     setKeyword("");
    
   }
+
+  
   return (
     <>
 
-      <AppContext.Provider value={{ blogs, setBlogs, courses, setCourses, keyword, setKeyword, searchCourse, clearSearchBox, noResults, setNoResults }} >
+      <AppContext.Provider value={{ blogs, setBlogs, courses, setCourses, keyword, setKeyword, searchCourse, clearSearchBox, noResults, setNoResults, selectedCourse, setSelectedCourse }} >
         <BrowserRouter>
 
           <Header />
@@ -87,6 +94,10 @@ function App() {
             <Route path='/courses' element={<Courses />} />
             <Route path='/instructors' element={<Instructors />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/course-details/' element={<CourseDetails />} />
+          
+
+ 
 
           </Routes>
           <Footer />

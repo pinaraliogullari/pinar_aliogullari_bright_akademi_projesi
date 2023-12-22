@@ -19,9 +19,8 @@ const Header = () => {
   const { searchCourse } = useContext(AppContext);
   const handleCoursesClick = () => {
     handleOffcanvasClose();
-    searchCourse(""); // Boş bir anahtar kelime ile tüm kursları göster
+    searchCourse("");
   };
-
 
 
 

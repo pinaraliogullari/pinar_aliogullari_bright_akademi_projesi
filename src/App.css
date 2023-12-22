@@ -132,7 +132,7 @@ background-color:white;
 }
 
 .course-card:hover .course-img {
-  transform: scale(1.2); /* Resmi büyütmek için */
+  transform: scale(1.2); 
 }
 
 .course-body {

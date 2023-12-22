@@ -6,45 +6,46 @@ import Search from '../../Components/Search';
 import { AppContext } from '../../Context/AppContext';
 import Course from '../../Components/Course';
 
-//sağdan soldan eşit boşluk sorunu
+
 
 const Courses = () => {
 
-  const { courses,noResults } = useContext(AppContext);
+  const { courses, noResults } = useContext(AppContext);
 
   return (
     <Container fluid className=' background' style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover" }}>
       <Row>
         <Col className='mt-5' xs={12}>
           <Search />
-         
-          
-       
 
         </Col>
       </Row>
+
       <Row >
-        <Col className='mx-5 my-4'>
+        <Col style={{ marginLeft: '150px' }} className='my-4'>
           <h2 className='title '>COURSES</h2>
         </Col>
       </Row>
-     
-     
-      <Row className='mx-5'>
+
+
+      <Row className='mx-5 '>
         {noResults ? (
           <div style={{ height: '100vh' }} >
             <p className='text-light fs-5 '>Not found. If you wish, you could search for another course.</p>
 
           </div>
-      
-        ):
-                courses.map((course, index) => (
-          <Col lg={4} md={6} sm={6} xs={12} className='mb-3 ' key={index} >
-            <Course course={course} />
-          </Col>
-        ))}
 
-        </Row>
+        ) :
+          courses.map((course, index) => (
+            <Col lg={4} md={6} sm={6} xs={12} className='mb-3 ' key={index} >
+              <Course course={course} />
+            </Col>
+          ))}
+
+      </Row>
+
+
+
     </Container>
   );
 };
