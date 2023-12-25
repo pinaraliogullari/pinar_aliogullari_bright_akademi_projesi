@@ -17,7 +17,7 @@ import { BsBrowserSafari } from "react-icons/bs";
 import { TbBulb } from "react-icons/tb";
 
 
-
+//partnerler responsive olmadı
 
 const AboutUs = () => {
   return (
@@ -28,7 +28,7 @@ const AboutUs = () => {
 
         <Row >
           <Col>
-            <img src={slider1} className=" w-100"  style={{ objectFit: 'cover', width: '100%', height: '100%', maxHeight: '300px' }} />
+            <img src={slider1} className=" w-100" style={{ objectFit: 'cover', width: '100%', height: '100%', maxHeight: '300px' }} />
           </Col>
 
         </Row>
@@ -116,7 +116,7 @@ const AboutUs = () => {
           </Col>
 
         </Row>
-  
+
         <Row style={{ marginLeft: '55px' }} className='d-flex flex-wrap justify-content-evenly align-items-center my-5  px-4 g-3 '>
           <Col lg={3} md={6} sm={6} xs={12}>
             <Card style={{ width: '18rem' }}>
@@ -185,7 +185,7 @@ const AboutUs = () => {
 
 
         </Row>
-    
+
 
 
 

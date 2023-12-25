@@ -7,11 +7,11 @@ import Courses from './Pages/Courses/Courses.js';
 import Instructors from './Pages/Instructors/Instructors.js';
 import Contact from './Pages/Contact/Contact.js';
 import CourseDetails from './Pages/CourseDetails/CourseDetails.js';
-
-
+import InstructorDetails from './Pages/InstructorDetails.js/InstructorDetails.js';
 import Footer from './Components/Footer.js';
 import { AppContext } from './Context/AppContext.js';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import blog1 from './Images/blog1.jpg';
 import blog2 from './Images/blog2.jpg';
 import blog3 from './Images/blog3.jpg';
@@ -21,6 +21,8 @@ import course3 from './Images/course3.jpg';
 import course4 from './Images/course4.jpg';
 import course5 from './Images/course5.jpg';
 import course6 from './Images/course6.jpg';
+
+
 
 
 const allBlogs = [
@@ -37,7 +39,7 @@ const allCourses = [
     image: course2, courseTitle: "Network System and Cyber Security Specialization  Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "320 hours"
   },
   {
-    image: course3, courseTitle: "Application Development with Node.js", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "120 hours"
+    image: course3, courseTitle: "Front-end Development with React.Js", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "120 hours"
   },
   {
     image: course4, courseTitle: "Full Data Specialization Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "400 hours"
@@ -52,13 +54,26 @@ const allCourses = [
 
 ]
 
+
+
 function App() {
   const [blogs, setBlogs] = useState(allBlogs);
   const [courses, setCourses] = useState(allCourses);
+  const [selectedCourse, setSelectedCourse] = useState(null);
   const [keyword, setKeyword] = useState("");
   const [noResults, setNoResults] = useState(false);
-  const [selectedCourse, setSelectedCourse] = useState(null);
- 
+  const [selectedInstructor, setSelectedInstructor] = useState(null);
+  const [instructorDatas, setInstructorDatas] = useState([]); 
+
+  useEffect(() => {
+    axios.get('https://randomuser.me/api/?results=8')
+      .then(response => {
+        setInstructorDatas(response.data.results);
+      })
+      .catch(error => {
+        console.error('API isteği başarısız', error);
+      });
+  }, []);
 
   const searchCourse = (keyword) => {
     const filteredCourses = allCourses.filter((course) =>
@@ -76,18 +91,13 @@ function App() {
 
   const clearSearchBox = () => {
     setKeyword("");
-   
   }
 
-  
   return (
     <>
-
-      <AppContext.Provider value={{ blogs, setBlogs, courses, setCourses, keyword, setKeyword, searchCourse, clearSearchBox, noResults, setNoResults, selectedCourse, setSelectedCourse }} >
+      <AppContext.Provider value={{ blogs, setBlogs, courses, setCourses, keyword, setKeyword, searchCourse, clearSearchBox, noResults, setNoResults, selectedCourse, setSelectedCourse, instructorDatas, setInstructorDatas, selectedInstructor, setSelectedInstructor }}>
         <BrowserRouter>
-
           <Header />
-
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about-us" element={<AboutUs />} />
@@ -95,18 +105,12 @@ function App() {
             <Route path='/instructors' element={<Instructors />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/course-details/' element={<CourseDetails />} />
-          
-
- 
+            <Route path='/instructor-details/' element={<InstructorDetails />} />
 
           </Routes>
           <Footer />
-
         </BrowserRouter>
       </AppContext.Provider>
-
-
-
     </>
   );
 }

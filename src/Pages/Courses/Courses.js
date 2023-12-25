@@ -29,13 +29,7 @@ const Courses = () => {
 
 
       <Row className='mx-5 '>
-        {noResults ? (
-          <div style={{ height: '100vh' }} >
-            <p className='text-light fs-5 '>Not found. If you wish, you could search for another course.</p>
-
-          </div>
-
-        ) :
+        {
           courses.map((course, index) => (
             <Col lg={4} md={6} sm={6} xs={12} className='mb-3 ' key={index} >
               <Course course={course} />
