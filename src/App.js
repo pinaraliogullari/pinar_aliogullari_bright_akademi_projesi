@@ -66,7 +66,7 @@ function App() {
   const [instructorDatas, setInstructorDatas] = useState([]); 
 
   useEffect(() => {
-    axios.get('https://randomuser.me/api/?results=8')
+    axios.get('https://randomuser.me/api/?results=12')
       .then(response => {
         setInstructorDatas(response.data.results);
       })

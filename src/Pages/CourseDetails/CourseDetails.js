@@ -27,7 +27,7 @@ const CourseDetails = () => {
     }
 
     return (
-        <>
+       
             <Container fluid className='background' style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover" }}>
                 <Row >
                     <Col className='mx-5 px-5 mt-5'>
@@ -119,7 +119,7 @@ const CourseDetails = () => {
                     
                 </Row>
             </Container>
-        </>
+       
     );
 }
 

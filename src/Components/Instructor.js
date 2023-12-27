@@ -28,7 +28,8 @@ const Instructor = ({ instructor }) => {
                     <Card.Body className="instructor-body">
                     <Card.Title><strong>{`${instructor.name.first} ${instructor.name.last}`}</strong></Card.Title>
                         <Card.Text className="limited-text mt-3">
-                            Email: {instructor.email}
+                            <h6>Developer</h6>
+                         <a href={`mailto:${instructor.email}`}>{instructor.email}</a>
                         </Card.Text>
 
                     </Card.Body>
