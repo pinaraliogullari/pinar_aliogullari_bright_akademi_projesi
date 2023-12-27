@@ -37,7 +37,7 @@ const AboutUs = () => {
             <h1 className='title' > Who We Are?</h1>
           </Col>
         </Row>
-        <Row className='d-flex justify-content-evenly align-items-center mt-5' >
+        <Row className='d-flex justify-content-evenly align-items-center  mt-5' >
           <Col xs={12} md={5} style={{ lineHeight: '24px', textAlign: 'justify' }}>
 
 

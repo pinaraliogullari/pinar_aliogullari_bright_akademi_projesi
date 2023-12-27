@@ -32,8 +32,8 @@ const Instructors = () => {
   return (
     <Container fluid className='background' style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
 
-      <Row className='mx-5 '>
-        <h2 className='title mt-5'>INSTRUCTORS</h2>
+      <Row className='mx-auto ' style={{overflow:'hidden'}}>
+        <h2 className='title mt-5 mx-5'>INSTRUCTORS</h2>
         <Carousel responsive={responsive} >
           {instructorDatas.map((instructor, index) => (
             <Col className='mb-5' key={index}>

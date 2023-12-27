@@ -141,7 +141,8 @@ background-color:white;
 }
 /*instructions*/
 .instructor-card {
-  width: 20rem;
+  width: 18rem;
+  margin:auto;
   opacity: 1;
   transition: transform 0.3s ease-in-out;
   cursor:pointer;
@@ -170,3 +171,13 @@ background-color:white;
   min-height: 150px;
 
 }
+
+@media screen and (max-width: 576px) {
+  .course-card{
+       width:25rem;
+    }
+
+  
+}
+
+

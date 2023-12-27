@@ -15,7 +15,7 @@ const Instructor = ({ instructor }) => {
 
       
             <div>
-            <Card className="instructor-card mt-4 mx-auto ">
+            <Card className="instructor-card mt-4  ">
                 <div className="img-container">
                     <Card.Img
                         className="instructor-img"

@@ -48,9 +48,9 @@ const CourseDetails = () => {
                         <Form className='  py-4 px-4 my-5 w-100' style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)', boxSizing: 'border-box' }} >
                             <h3 className='text-light'> <strong>Apply</strong> now to benefit from advantageous prices!</h3>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label className='text-light my-3 ' >Email address</Form.Label>
+                                <Form.Label className='text-light my-3 ' >Fullname</Form.Label>
                                 <Form.Control type="text" placeholder="Enter your fullname" />
-                                <Form.Label className='text-light my-3'>Email address</Form.Label>
+                                <Form.Label className='text-light my-3'>Phone Number</Form.Label>
                                 <Form.Control type="text" placeholder="Enter your phone number" />
                                 <Form.Label className='text-light my-3'>Email address</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" />
@@ -61,8 +61,13 @@ const CourseDetails = () => {
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label className='text-light my-3'>Password</Form.Label>
-                                <Form.Control type="password" placeholder="Password" />
+                                <Form.Label className='text-light my-3'>Course</Form.Label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Choose a course</option>
+                                <option value="1">Full Stack Developer</option>
+                                <option value="2">Mobile Developer</option>
+                                <option value="3">Front-end Developer</option>
+                            </select>
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                 <Form.Check type="checkbox" className='text-light my-3' label="Check me out" />

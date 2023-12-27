@@ -18,7 +18,7 @@ const Search = () => {
       <Container  >
         <div>
           <Form onSubmit={handleSubmit}>
-            <InputGroup className="mb-3 mx-auto ">
+            <InputGroup className="mb-3  ">
               <Form.Control
                 value={keyword} onChange={(e) => { setKeyword(e.target.value) }}
                 placeholder="Please enter the course name "

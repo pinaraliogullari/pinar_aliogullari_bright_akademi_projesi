@@ -14,21 +14,21 @@ const Courses = () => {
 
   return (
     <Container fluid className=' background' style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover" }}>
-      <Row>
-        <Col className='mt-5' xs={12}>
+      <Row >
+        <Col className='mt-5 ' xs={12}>
           <Search />
 
         </Col>
       </Row>
 
       <Row >
-        <Col style={{ marginLeft: '150px' }} className='my-4'>
+        <Col style={{ marginLeft: '80px' }} className='my-4'>
           <h2 className='title '>COURSES</h2>
         </Col>
       </Row>
 
 
-      <Row className='mx-5 '>
+      <Row>
         {
           courses.map((course, index) => (
             <Col lg={4} md={6} sm={6} xs={12} className='mb-3 ' key={index} >
