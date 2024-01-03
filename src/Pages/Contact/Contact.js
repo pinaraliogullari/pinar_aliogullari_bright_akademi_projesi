@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import background from '../../Images/background6.jpg';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import ReCAPTCHA from 'react-google-recaptcha';
+import Wp from '../../Components/Wp';
 
 
 
@@ -11,7 +12,7 @@ const Contact = () => {
   return (
     <>
       <Container fluid className=' background ' style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover", paddingLeft: '40px', paddingRight: '40px' }}>
-
+        <Wp />
         <Row className='mx-auto'>
           <Col md={6} sm={12} className='mt-5'>
             <iframe style={{ width: "100%", height: "100vh", position: 'relative' }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.1382993896787!2d29.004241475559976!3d41.04410461721886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a24975fe5d%3A0xa05d7aa13cfcaf89!2sBah%C3%A7e%C5%9Fehir%20%C3%9Cniversitesi%20Wissen%20Akademie!5e0!3m2!1str!2str!4v1703669297124!5m2!1str!2str"  ></iframe>

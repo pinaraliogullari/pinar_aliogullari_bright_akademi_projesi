@@ -62,7 +62,7 @@ const Homepage = () => {
           <Col md={12} lg={6}>
             <h3 className='mx-5  mt-4 title' ><span><strong>Blog</strong></span>Posts </h3>
             {blogs.map((blog, index) => (
-              <Col key={index} className="mb-4 border p-5">
+              <Col key={index} className="my-4  p-5" style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.3)' }} >
                 <Blog blog={blog} />
               </Col>
             ))}

@@ -28,10 +28,10 @@ const Courses = () => {
       </Row>
 
 
-      <Row>
+      <Row >
         {
           courses.map((course, index) => (
-            <Col lg={4} md={6} sm={6} xs={12} className='mb-3 ' key={index} >
+            <Col lg={4} md={6} sm={6} xs={12} className='mb-3 ' key={index}  >
               <Course course={course} />
             </Col>
           ))}

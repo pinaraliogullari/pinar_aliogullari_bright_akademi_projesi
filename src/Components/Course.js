@@ -13,7 +13,7 @@ const Course = ({ course }) => {
 
   return (
     <>
-      <Card className="course-card mb-4 mx-auto">
+      <Card className="course-card mb-4 mx-auto" style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.3)', boxSizing: 'border-box' }} >
         <div className="img-container">
           <Card.Img
             className="course-img"
