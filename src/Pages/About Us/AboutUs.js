@@ -17,7 +17,7 @@ import { BsBrowserSafari } from "react-icons/bs";
 import { TbBulb } from "react-icons/tb";
 
 
-//partnerler responsive olmadı
+
 
 const AboutUs = () => {
   return (
