@@ -26,11 +26,9 @@
    - It is the starting point of the project. Sections containing blog posts, videos and a brief summary of the training are included.
    - There is a button to go up the page.
 
-
 2. **About Us**
    - Information about the academy and partners is included.
  
-
 3. **Courses**
    - This is a page with general information about the courses.
    - Features course cards and a searchbar for searching.
@@ -45,7 +43,7 @@
 6. **Instructor Details**
    - This is the page that contains detailed information about the instructors.
 
-   7. **Contact**
+7. **Contact**
    - This is the page where the academy map and contact form are located.
    - There is a Whatsapp contact button.
 
