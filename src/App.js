@@ -63,7 +63,7 @@ function App() {
   const [keyword, setKeyword] = useState("");
   const [noResults, setNoResults] = useState(false);
   const [selectedInstructor, setSelectedInstructor] = useState(null);
-  const [instructorDatas, setInstructorDatas] = useState([]); 
+  const [instructorDatas, setInstructorDatas] = useState([]);
 
   useEffect(() => {
     axios.get('https://randomuser.me/api/?results=12')

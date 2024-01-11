@@ -78,7 +78,8 @@ const Homepage = () => {
                 <div className='mt-5 '>
                   <h3 className='title'>Why should I join the <strong>Bright Program?</strong> </h3>
                   <hr />
-                  <p className='text'>BAU Bright Education and Employment Project is supported by 5000+ business partners of Bahçeşehir University and Wissen Technology, especially in the informatics, consultancy, telecommunication and software sectors.</p>
+                  <p className='text '>BAU Bright Education and Employment Project is supported by 5000+ business partners of Bahçeşehir University and Wissen Technology, especially in the informatics, consultancy, telecommunication and software sectors.</p>
+                  <p className='text '>BAU Bright Education and Employment Project is supported by 5000+ business partners of Bahçeşehir University and Wissen Technology, especially in the informatics, consultancy, telecommunication and software sectors.</p>
                   <hr />
 
                 </div>
@@ -87,7 +88,7 @@ const Homepage = () => {
                 <Row>
                   <Col >
 
-                    <div className="icon-container" style={{ marginTop: '60px' }}>
+                    <div className="icon-container" style={{ marginTop: '100px' }}>
                       <span><FcAutomatic style={{ fontSize: '60' }} /></span>
                       <div className="text-container">
                         <span className='mx-3  text'>6 months of practical training with expert trainers</span>

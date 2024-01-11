@@ -41,7 +41,7 @@ const AboutUs = () => {
           <Col xs={12} md={5} style={{ lineHeight: '24px', textAlign: 'justify' }}>
 
 
-            <p className='text' >
+            <p className='text mx-2' >
 
               Bright Academie is an institution that provides content consultancy to Bahçeşehir University, one of the most important educational institutions in Turkey, in sectoral training programs related to information technologies. Wissen, which has adopted the slogan "more than education" as its corporate culture, continues its professionalism in this field by providing education to thousands of people every year with the academic success of Bahçeşehir University. In this way, it enables candidates to create a successful career. The training continues, aware that the consultancy it has provided so far and its ongoing programs are extremely important for the future and success of Turkey's technological investments.
               Bright Academie 's aim is to turn candidates interested in information technologies into well-trained and qualified people in this field and to take IT companies to a more efficient level. In this way, the quality of the technologies our country will produce will increase and high added value jobs will emerge. For this purpose, Wissen increased its international agreements, increased its relations with Microsoft to the Gold Partner level, and created partnerships with institutions.
@@ -51,7 +51,7 @@ const AboutUs = () => {
           </Col>
           <Col xs={12} md={5} style={{ lineHeight: '24px', textAlign: 'justify' }}>
 
-            <p className='text' >
+            <p className='text mx-2 ' >
 
               <strong>Qualified Information Technologies Specialist Training Program</strong> <br />
 
