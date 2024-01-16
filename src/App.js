@@ -33,22 +33,22 @@ const allBlogs = [
 
 const allCourses = [
   {
-    image: course1, courseTitle: "Full Stack Programming Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "500 hours"
+    id:0,image: course1, courseTitle: "Full Stack Programming Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "500 hours"
   },
   {
-    image: course2, courseTitle: "Network System and Cyber Security Specialization  Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "320 hours"
+    id:1,image: course2, courseTitle: "Network System and Cyber Security Specialization  Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "320 hours"
   },
   {
-    image: course3, courseTitle: "Front-end Development with React.Js", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "120 hours"
+    id:2,image: course3, courseTitle: "Front-end Development with React.Js", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "120 hours"
   },
   {
-    image: course4, courseTitle: "Full Data Specialization Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "400 hours"
+    id:3, image: course4, courseTitle: "Full Data Specialization Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "400 hours"
   },
   {
-    image: course5, courseTitle: "Mobile Developer Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "250 hours"
+    id:4,image: course5, courseTitle: "Mobile Developer Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "250 hours"
   },
   {
-    image: course6, courseTitle: "Game Development with Unity Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "120 hours"
+    id:5,image: course6, courseTitle: "Game Development with Unity Course", courseInfo: "This course covers the details of the C# programming language, one of the most popular programming languages ​​in the world, the world's most popular client-based web software development frameworks, and Asp.Net and Asp.Net Core MVC, which are server-based web technologies developed by Microsoft.", time: "120 hours"
   },
 
 
@@ -60,6 +60,7 @@ function App() {
   const [blogs, setBlogs] = useState(allBlogs);
   const [courses, setCourses] = useState(allCourses);
   const [selectedCourse, setSelectedCourse] = useState(null);
+  const [selectedCourse2, setSelectedCourse2] = useState(null);
   const [keyword, setKeyword] = useState("");
   const [noResults, setNoResults] = useState(false);
   const [selectedInstructor, setSelectedInstructor] = useState(null);
@@ -95,7 +96,7 @@ function App() {
 
   return (
     <>
-      <AppContext.Provider value={{ blogs, setBlogs, courses, setCourses, keyword, setKeyword, searchCourse, clearSearchBox, noResults, setNoResults, selectedCourse, setSelectedCourse, instructorDatas, setInstructorDatas, selectedInstructor, setSelectedInstructor }}>
+      <AppContext.Provider value={{ blogs, setBlogs, courses, setCourses, keyword, setKeyword, searchCourse, clearSearchBox, noResults, setNoResults, selectedCourse, setSelectedCourse, instructorDatas, setInstructorDatas, selectedInstructor, setSelectedInstructor, selectedCourse2, setSelectedCourse2 }}>
         <BrowserRouter>
           <Header />
           <Routes>
@@ -104,7 +105,7 @@ function App() {
             <Route path='/courses' element={<Courses />} />
             <Route path='/instructors' element={<Instructors />} />
             <Route path='/contact' element={<Contact />} />
-            <Route path='/course-details/' element={<CourseDetails />} />
+            <Route path='/course-details/:id' element={<CourseDetails />} />
             <Route path='/instructor-details/' element={<InstructorDetails />} />
 
           </Routes>

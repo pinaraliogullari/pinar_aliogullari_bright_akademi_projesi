@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const Course = ({ course }) => {
   const { setSelectedCourse } = useContext(AppContext);
 
+
   const handleCourseClick = () => {
     setSelectedCourse(course);
   };
@@ -31,7 +32,7 @@ const Course = ({ course }) => {
             <hr />
           </Card.Text>
           <div className='d-flex justify-content-end'>
-            <Link to='/course-details'>
+            <Link to={`/course-details/${course.id}`}>
               <Button variant="primary" onClick={handleCourseClick}>Details</Button>
             </Link>
           </div>

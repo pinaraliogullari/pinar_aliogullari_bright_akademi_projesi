@@ -26,15 +26,35 @@ user-select:none;
   transition: opacity 0.3s ease;
 
 }
-.nav-item:hover{
+/* .nav-item:hover{
     opacity:.7;
-}
+} */
 .nav-link[aria-current="page"] {
 
   font-weight: bold; 
 
   
 }
+.custom-dropdown{
+  z-index:1000000;
+
+}
+.dropdown-item{
+    font-size:small;
+}
+.custom-dropdown .nav-link,
+.custom-dropdown .dropdown-item {
+  color: white !important;
+}
+.custom-dropdown .dropdown-item:hover {
+  color: black !important;
+  font-weight:bold;
+}
+
+.custom-dropdown .dropdown-menu {
+  background-color: #001221; 
+}
+
 
 
 .custom-toggle{

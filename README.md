@@ -1,8 +1,10 @@
 
 # Bright Academy Web Interface Project
 
-
+[My Project](https://github.com/pinaraliogullari/pinar_aliogullari_bright_akademi_projesi.git)
+![Ekran görüntüsü 2024-01-16 175255](https://github.com/pinaraliogullari/pinar_aliogullari_bright_akademi_projesi/assets/112780885/348e9489-88ee-41fe-94b7-a5e26c261e24)
 ## Used Technologies and Packages
+
 
 - **Bootstrap**
 
@@ -47,4 +49,6 @@
    - This is the page where the academy map and contact form are located.
    - There is a Whatsapp contact button.
 
-  
+  ## What I haven't completed in my project
+1. You can access the selected course details from the courses page. However, only the page with all the courses can be accessed via dropdown. Unfortunately, the selected course cannot be accessed.
+2. I would like to create a more visually dynamic website.
