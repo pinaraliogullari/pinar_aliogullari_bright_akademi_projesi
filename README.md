@@ -1,7 +1,8 @@
 
 # Bright Academy Web Interface Project
 
-[My Project](https://github.com/pinaraliogullari/pinar_aliogullari_bright_akademi_projesi.git)
+[Click for the vercel link of my project](https://github.com/pinaraliogullari/pinar_aliogullari_bright_akademi_projesi.git)
+
 ![Ekran görüntüsü 2024-01-16 175255](https://github.com/pinaraliogullari/pinar_aliogullari_bright_akademi_projesi/assets/112780885/348e9489-88ee-41fe-94b7-a5e26c261e24)
 ## Used Technologies and Packages
 
